@@ -16,6 +16,6 @@ public class HomeController {
     @GetMapping
     public ModelAndView home(ModelMap modelMap, @RequestParam(name = "name", required = false) String name){
         modelMap.put("name", name);
-        return new ModelAndView("WEB-INF/templates/ftl/test.ftl");
+        return new ModelAndView("WEB-INF/templates/ftl/test.jsp");
     }
 }
