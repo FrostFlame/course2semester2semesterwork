@@ -10,23 +10,11 @@
     <context:component-scan base-package="ru.kpfu.itis.group11501.serazetdinov.coursetest.controller"/>
     <mvc:annotation-driven/>
 
-    <mvc:resources mapping="/resources/**" location="/resources"/>
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/resources/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-
-    <!--<bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">-->
-        <!--<property name="suffix" value=".ftl" />-->
-        <!--<property name="contentType" value="text/html;charset=UTF-8" />-->
-        <!--<property name="order" value="1" />-->
-    <!--</bean>-->
-
-    <!--<bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">-->
-        <!--<property name="templateLoaderPath" value="/resources/ftl/" />-->
-    <!--</bean>-->
-
-    <mvc:resources mapping="/static/**" location="/resources/static/" order="3" />
 
 </beans>

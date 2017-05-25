@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="hibernate_test@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.0">
+    <root id="1"/>
+    <database id="2" parent="1" name="hibernate_test">
+      <ObjectId>74297</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-05-25.16:20:07.785</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1556</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="4" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="5" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="6" parent="2" name="pg_temp_1">
+      <ObjectId>11848</ObjectId>
+    </schema>
+    <schema id="7" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11849</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="information_schema">
+      <ObjectId>12113</ObjectId>
+    </schema>
+    <sequence id="9" parent="3" name="groups_id_seq">
+      <ObjectId>74814</ObjectId>
+      <StateNumber>1547</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="10" parent="3" name="students_id_seq">
+      <ObjectId>74835</ObjectId>
+      <StateNumber>1555</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <table id="11" parent="3" name="groups">
+      <ObjectId>74816</ObjectId>
+      <StateNumber>1556</StateNumber>
+    </table>
+    <table id="12" parent="3" name="students">
+      <ObjectId>74837</ObjectId>
+      <StateNumber>1556</StateNumber>
+    </table>
+    <column id="13" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1547</StateNumber>
+      <DefaultExpression>nextval(&apos;groups_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="14" parent="11" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1547</StateNumber>
+    </column>
+    <index id="15" parent="11" name="groups_pkey">
+      <ObjectId>74820</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="16" parent="11" name="groups_pkey">
+      <ObjectId>74821</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>groups_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="17" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1555</StateNumber>
+      <DefaultExpression>nextval(&apos;students_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="18" parent="12" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>1555</StateNumber>
+    </column>
+    <column id="19" parent="12" name="group_id">
+      <Position>3</Position>
+      <DataType>bigint|0</DataType>
+      <StateNumber>1555</StateNumber>
+    </column>
+    <index id="20" parent="12" name="students_pkey">
+      <ObjectId>74841</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="21" parent="12" name="students_pkey">
+      <ObjectId>74842</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>students_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="22" parent="12" name="fkmsev1nou0j86spuk5jrv19mss">
+      <ObjectId>74843</ObjectId>
+      <ColNames>group_id</ColNames>
+      <RefTableName>groups</RefTableName>
+      <RefKeyName>groups_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>
