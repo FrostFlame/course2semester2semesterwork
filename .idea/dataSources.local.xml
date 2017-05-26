@@ -10,14 +10,14 @@
       <user-name>postgres</user-name>
       <resolve-scope>hibernate_test:postgres,public</resolve-scope>
     </data-source>
-    <data-source name="dbt2v6empae39r@ec2-54-197-232-155.compute-1.amazonaws.com" uuid="7bc6f6a7-d03b-47c2-bfdb-2619ca0acdf4">
+    <data-source name="d8hh3h82ijqv9g@ec2-107-21-108-204.compute-1.amazonaws.com" uuid="633381e6-197e-4bc5-a579-7ac500740dab">
       <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4.1212">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
-      <user-name>hygzpafytzxtkr</user-name>
-      <resolve-scope>dbt2v6empae39r:hygzpafytzxtkr,public</resolve-scope>
+      <user-name>yzdnsihzqatlvs</user-name>
+      <resolve-scope>d8hh3h82ijqv9g:public,yzdnsihzqatlvs</resolve-scope>
     </data-source>
   </component>
 </project>
