@@ -9,6 +9,11 @@ import java.util.List;
 @Entity
 @Table(name = "groups")
 public class Group {
+
+    public Group(String name) {
+        this.name = name;
+    }
+
     @Column
     private String name;
     @Id

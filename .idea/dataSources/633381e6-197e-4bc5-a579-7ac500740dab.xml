@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="d8hh3h82ijqv9g@ec2-107-21-108-204.compute-1.amazonaws.com">
+<dataSource name="herokudb">
   <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.0">
     <root id="1"/>
     <database id="2" parent="1" name="d8hh3h82ijqv9g">

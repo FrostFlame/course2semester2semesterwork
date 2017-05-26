@@ -7,7 +7,7 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/hibernate_test</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="d8hh3h82ijqv9g@ec2-107-21-108-204.compute-1.amazonaws.com" uuid="633381e6-197e-4bc5-a579-7ac500740dab">
+    <data-source source="LOCAL" name="herokudb" uuid="633381e6-197e-4bc5-a579-7ac500740dab">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
