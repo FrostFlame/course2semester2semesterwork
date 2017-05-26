@@ -1,0 +1,6 @@
+ru\kpfu\itis\group11501\serazetdinov\coursetest\repository\GroupRepository.class
+ru\kpfu\itis\group11501\serazetdinov\coursetest\service\GroupService.class
+ru\kpfu\itis\group11501\serazetdinov\coursetest\model\Group.class
+ru\kpfu\itis\group11501\serazetdinov\coursetest\model\Student.class
+ru\kpfu\itis\group11501\serazetdinov\coursetest\controller\IndexController.class
+ru\kpfu\itis\group11501\serazetdinov\coursetest\service\impl\GroupServiceImpl.class

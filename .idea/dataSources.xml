@@ -7,5 +7,15 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/hibernate_test</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="dbt2v6empae39r@ec2-54-197-232-155.compute-1.amazonaws.com" uuid="7bc6f6a7-d03b-47c2-bfdb-2619ca0acdf4">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-54-197-232-155.compute-1.amazonaws.com:5432/dbt2v6empae39r</jdbc-url>
+      <driver-properties>
+        <property name="sslfactory" value="org.postgresql.ssl.NonValidatingFactory" />
+        <property name="ssl" value="true" />
+      </driver-properties>
+    </data-source>
   </component>
 </project>

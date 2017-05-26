@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="dbt2v6empae39r@ec2-54-197-232-155.compute-1.amazonaws.com">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.0">
+    <root id="1"/>
+    <database id="2" parent="1" name="dbt2v6empae39r">
+      <ObjectId>6227606</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-05-26.10:17:40.215</IntrospectionTimestamp>
+      <IntrospectionStateNumber>13360540</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="4" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="5" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="6" parent="2" name="pg_temp_1">
+      <ObjectId>11848</ObjectId>
+    </schema>
+    <schema id="7" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11849</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="information_schema">
+      <ObjectId>13003</ObjectId>
+    </schema>
+    <sequence id="9" parent="3" name="groups_id_seq">
+      <ObjectId>6266953</ObjectId>
+      <StateNumber>13360376</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="10" parent="3" name="students_id_seq">
+      <ObjectId>6266956</ObjectId>
+      <StateNumber>13360523</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <table id="11" parent="3" name="groups">
+      <ObjectId>6266958</ObjectId>
+      <StateNumber>13360540</StateNumber>
+    </table>
+    <table id="12" parent="3" name="students">
+      <ObjectId>6266964</ObjectId>
+      <StateNumber>13360540</StateNumber>
+    </table>
+    <column id="13" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>13360538</StateNumber>
+      <DefaultExpression>nextval(&apos;groups_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="14" parent="11" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>13360538</StateNumber>
+    </column>
+    <index id="15" parent="11" name="groups_pkey">
+      <ObjectId>6266962</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="16" parent="11" name="groups_pkey">
+      <ObjectId>6266963</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>groups_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="17" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>13360540</StateNumber>
+      <DefaultExpression>nextval(&apos;students_id_seq&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="18" parent="12" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>13360540</StateNumber>
+    </column>
+    <column id="19" parent="12" name="group_id">
+      <Position>3</Position>
+      <DataType>bigint|0</DataType>
+      <StateNumber>13360540</StateNumber>
+    </column>
+    <index id="20" parent="12" name="students_pkey">
+      <ObjectId>6266968</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="21" parent="12" name="students_pkey">
+      <ObjectId>6266969</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>students_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="22" parent="12" name="fkmsev1nou0j86spuk5jrv19mss">
+      <ObjectId>6266970</ObjectId>
+      <ColNames>group_id</ColNames>
+      <RefTableName>groups</RefTableName>
+      <RefKeyName>groups_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>

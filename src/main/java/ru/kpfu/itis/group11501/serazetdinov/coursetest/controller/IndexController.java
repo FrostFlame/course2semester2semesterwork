@@ -22,8 +22,10 @@ public class IndexController {
     }
 
     @RequestMapping("/")
-    public String showIndexPage(Model model) {
-        model.addAttribute("group", groupService.findByName("11-502"));
+    public String showIndexPage(Model model, @RequestParam(value = "group", required = false) String group) {
+        if (group != null) {
+            model.addAttribute("group", groupService.findByName(group));
+        }
         return "index";
     }
 

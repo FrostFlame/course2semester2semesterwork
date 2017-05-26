@@ -1,2 +1,6 @@
-F:\HerokuHerna\CourseTest\src\main\java\ru\kpfu\itis\group11501\serazetdinov\util\AppConfig.java
-F:\HerokuHerna\CourseTest\src\main\java\ru\kpfu\itis\group11501\serazetdinov\coursetest\controller\HomeController.java
+F:\HerokuHerna\CourseTest\src\main\java\ru\kpfu\itis\group11501\serazetdinov\coursetest\repository\GroupRepository.java
+F:\HerokuHerna\CourseTest\src\main\java\ru\kpfu\itis\group11501\serazetdinov\coursetest\model\Student.java
+F:\HerokuHerna\CourseTest\src\main\java\ru\kpfu\itis\group11501\serazetdinov\coursetest\model\Group.java
+F:\HerokuHerna\CourseTest\src\main\java\ru\kpfu\itis\group11501\serazetdinov\coursetest\controller\IndexController.java
+F:\HerokuHerna\CourseTest\src\main\java\ru\kpfu\itis\group11501\serazetdinov\coursetest\service\GroupService.java
+F:\HerokuHerna\CourseTest\src\main\java\ru\kpfu\itis\group11501\serazetdinov\coursetest\service\impl\GroupServiceImpl.java
