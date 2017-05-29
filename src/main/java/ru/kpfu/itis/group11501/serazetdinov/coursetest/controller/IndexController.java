@@ -7,7 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import ru.kpfu.itis.group11501.serazetdinov.coursetest.service.GroupService;
+import ru.kpfu.itis.group11501.serazetdinov.coursetest.service.UserService;
 
 import javax.sql.DataSource;
 import java.sql.*;
@@ -18,35 +18,20 @@ import java.sql.*;
 @Controller
 public class IndexController {
 
-    GroupService groupService;
+    UserService userService;
 
     @Autowired
-    public IndexController(GroupService groupService) {
-        this.groupService = groupService;
-    }
-
-    @Autowired
-    private DataSource dataSource;
-
-    public static void main(String[] args) throws Exception {
-        AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(IndexController.class.getPackage().getName());
+    public IndexController(UserService userService) {
+        this.userService = userService;
     }
 
     @RequestMapping("/")
-    public String showIndexPage(Model model, @RequestParam(value = "group", required = false) String group) {
-        if (group != null) {
-//            model.addAttribute("group", groupService.findByName(group));
-            try {
-                Statement stmt = dataSource.getConnection().createStatement();
-                ResultSet rs = stmt.executeQuery("SELECT * FROM d8hh3h82ijqv9g.public.groups WHERE name LIKE '" + group + "';");
-                while (rs.next()){
-                    model.addAttribute("group", rs.getString("name"));
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-
+    public String showIndexPage(Model model, @RequestParam(value = "id", required = false) String id) {
+        if (id != null) {
+            model.addAttribute("group", userService.findById(Long.parseLong(id)).getFirstname());
         }
+        else
+            model.addAttribute("group", "");
         return "index";
     }
 
