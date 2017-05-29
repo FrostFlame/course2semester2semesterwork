@@ -70,7 +70,8 @@ public class SignUpController {
                          @RequestParam(value = "skype", defaultValue = "") String skype,
                          @RequestParam(value = "education", defaultValue = "") String education,
                          @RequestParam(value = "genres", defaultValue = "") String genres) {
-
+        return "";
+        //toDo доделать
     }
 
 }

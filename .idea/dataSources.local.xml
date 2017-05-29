@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="hibernate_test@localhost" uuid="1d2745fd-0edd-4c84-ba96-10204fd11b98">
+    <data-source name="semester_base@localhost" uuid="835af264-65e3-4d23-9dd0-8064892be8e1">
       <database-info product="PostgreSQL" version="9.6rc1" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4.1212">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
-      <resolve-scope>hibernate_test:postgres,public</resolve-scope>
-    </data-source>
-    <data-source name="herokudb" uuid="633381e6-197e-4bc5-a579-7ac500740dab">
-      <database-info product="PostgreSQL" version="9.6.2" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4.1212">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <secret-storage>master_key</secret-storage>
-      <user-name>yzdnsihzqatlvs</user-name>
-      <resolve-scope>d8hh3h82ijqv9g:public,yzdnsihzqatlvs</resolve-scope>
+      <resolve-scope>semester_base:postgres,public</resolve-scope>
     </data-source>
   </component>
 </project>
